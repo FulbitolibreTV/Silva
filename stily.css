@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #ECEFF1; /* Gris claro (cemento) */
+    color: #212121; /* Gris oscuro para texto */
+}
+
+header {
+    background-color: #263238; /* Gris azulado (maquinaria) */
+    color: #FFFFFF;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: #CFD8DC; /* Gris claro para enlaces */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #FFCA28; /* Amarillo construcción */
+}
+
+.banner {
+    background-color: #37474F; /* Gris azulado oscuro */
+    color: #FFFFFF;
+    padding: 3rem 2rem;
+    text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('construction-bg.jpg'); /* Añade una imagen de fondo si la tienes */
+    background-size: cover;
+    background-position: center;
+}
+
+h1, h2 {
+    color: #263238; /* Gris azulado para títulos */
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #FFCA28; /* Amarillo construcción */
+    color: #212121;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 1rem 0;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #FFB300; /* Amarillo más oscuro */
+}
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.servicio {
+    background-color: #FFFFFF;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.servicio:hover {
+    transform: translateY(-5px);
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.foto-item img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.foto-item h3 {
+    color: #263238;
+    margin: 0.5rem 0;
+}
+
+.comentarios-lista {
+    margin-top: 1.5rem;
+    text-align: left;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.comentarios-lista p {
+    background-color: #FFFFFF;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    padding: 0.75rem;
+    border: 1px solid #B0BEC5; /* Gris azulado claro */
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #263238; /* Gris azulado */
+    color: #FFFFFF;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #FFCA28; /* Amarillo construcción */
+    color: #212121;
+}
+
+footer {
+    background-color: #212121; /* Gris oscuro */
+    color: #CFD8DC;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+
+    .banner {
+        padding: 2rem 1rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+}
